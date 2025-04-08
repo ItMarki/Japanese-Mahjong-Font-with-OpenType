@@ -85,9 +85,33 @@
                     <tr>
                         <th>Aka-Dora</th>
                         <td>赤ドラ</td>
-                        <td>Follow by a star mark <div class="badge badge-outline">*</div>. <br>E.g., <div class="badge badge-outline">5m*</div>
+                        <td>Follow by a star mark <div class="badge badge-outline">*</div> (applicable to all tiles). <br>E.g., <div class="badge badge-outline">5m*</div>
                             <div class="badge badge-outline">5p*</div>
                             <div class="badge badge-outline">5s*</div></br>
+                    </tr>
+
+                    <tr>
+                        <th>Ao-Dora</th>
+                        <td>青ドラ</td>
+                        <td>Follow by a tilde <div class="badge badge-outline">~</div> (only applicable to 5m, 5p, 5s). <br>E.g., <div class="badge badge-outline">5m~</div>
+                            <div class="badge badge-outline">5p~</div>
+                            <div class="badge badge-outline">5s~</div></br>
+                    </tr>
+
+                    <tr>
+                        <th>Kin-Dora</th>
+                        <td>金ドラ</td>
+                        <td>Follow by a caret <div class="badge badge-outline">^</div> (only applicable to 5m, 5p, 5s). <br>E.g., <div class="badge badge-outline">5m^</div>
+                            <div class="badge badge-outline">5p^</div>
+                            <div class="badge badge-outline">5s^</div></br>
+                    </tr>
+
+                    <tr>
+                        <th>Galaxy</th>
+                        <td>ギャラクシー</td>
+                        <td>Follow by a exclamation mark <div class="badge badge-outline">~</div> (applicable to all tiles). <br>E.g., <div class="badge badge-outline">1m!</div>
+                            <div class="badge badge-outline">4s!</div>
+                            <div class="badge badge-outline">6z!</div></br>
                     </tr>
 
                     <tr>
@@ -193,6 +217,16 @@
                     <div class="chat chat-end h-24 min-h-24">
                         <div class="chat-bubble font-mj-color h-24 min-h-24 text-6xl">1m2m3m5s5s*_5s</div>
                     </div>
+
+                    <div class="divider">Special Tiles / スペシャル牌 </div>
+
+
+                    <div class="chat chat-start">
+                        <div class="chat-bubble">5m~5m^6z!7z*1m!2s!-3p*_5z!-7z7z </div>
+                    </div>
+                    <div class="chat chat-end h-24 min-h-24">
+                        <div class="chat-bubble font-mj-color h-24 min-h-24 text-6xl">5m~5m^6z!7z*1m!2s!-3p*_5z!-7z7z</div>
+                    </div>
                 </div>
 
             </div>
@@ -294,8 +328,8 @@
 
 
                         <select class="select select-bordered join-item" id="colorOptions">
-                            <option id="mono" selected>白黒</option>
-                            <option id="color">彩色</option>
+                            <option id="mono">白黒</option>
+                            <option id="color" selected>彩色</option>
                         </select>
                     </div>
                     <div class="flex flex-col md:flex-row pt-5 pb-8">
@@ -387,7 +421,7 @@
                 </div>
 
                 <div class="w-full">
-                    <div id="rendered-text" class="text-3xl md:text-8xl font-mj-mono h-100 pb-5 text-center "></div>
+                    <div id="rendered-text" class="text-3xl md:text-8xl font-mj-color h-100 pb-5 text-center "></div>
                 </div>
 
             </div>

@@ -168,7 +168,7 @@ function main() {
         }
     } else {
         console.log("→ Get Basic URL")
-        const demoString = "45p*345m*88m_0220m_33s3s-3s=_6p"
+        const demoString = "55s~99p*_3m4p!-5m^_77z*7z-6z!=_0110m_9p"
         window.location.hash = encodeURL(demoString)
         textInput.value = (decodeURL(window.location.hash.substring(1)))
         renderedText.innerText = transformString(decodeURL(window.location.hash.substring(1)))
