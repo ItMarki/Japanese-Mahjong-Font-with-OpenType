@@ -32,7 +32,11 @@ const optionValues = {
     'syoushushi': '1112223344z333s_3z',
     'tsuiso': '1133344477755z_5z',
     'ryuiso': '22234666888s66z_2s',
-    'chinroo': '1119m111999p999s_9m'
+    'chinroo': '1119m111999p999s_9m',
+    'alltiles_1': '123456789m_123456789p_123456789s_123456789t_12345678z',
+    'alltiles_2': '1m*2m*3m*4m*5m*6m*7m*8m*9m*_1p*2p*3p*4p*5p*6p*7p*8p*9p*_1s*2s*3s*4s*5s*6s*7s*8s*9s*_1t*2t*3t*4t*5t*6t*7t*8t*9t*_1z*2z*3z*4z*5z*6z*7z*8z*',
+    'alltiles_3': '1m!2m!3m!4m!5m!6m!7m!8m!9m!_1p!2p!3p!4p!5p!6p!7p!8p!9p!_1s!2s!3s!4s!5s!6s!7s!8s!9s!_1t!2t!3t!4t!5t!6t!7t!8t!9t!_1z!2z!3z!4z!5z!6z!7z!8z!',
+    'alltiles_4': '5m~5p~5s~5t~_5m^5p^5s^5t^'
 };
 
 document.getElementById('selectOptions').addEventListener('change', function() {
@@ -168,7 +172,7 @@ function main() {
         }
     } else {
         console.log("→ Get Basic URL")
-        const demoString = "55s~99p*_3m4p!-5m^_77z*7z-6z!=_0110m_9p"
+        const demoString = "55s~99p*_3m4p!-5m^_77z*7z-6z!=_077t*0t_9p"
         window.location.hash = encodeURL(demoString)
         textInput.value = (decodeURL(window.location.hash.substring(1)))
         renderedText.innerText = transformString(decodeURL(window.location.hash.substring(1)))
